@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(Fondo3.jpg) no-repeat;
+    /* background-image: url(./Fondo3.jpg); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header>h1{
+    color: black;
+    font-size: 26pt;
+    padding: 20px;
+    background-color: rgb(219, 219, 219);
+}
+
+header>nav{
+    margin: 3%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    border-radius: 5px;
+    text-align: center;
+    width: 22%;
+    padding: 25px;
+    background-color: rgb(219, 219, 219);
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: white;
+    background-color: rgb(95, 95, 95);
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+
+main>p{
+    line-height: 24px;
+    color: white;
+}
+
+main>h1{
+    color: white;
+    font-size: 32pt;
+    margin-top: 80px;
+    padding: 0px 25% 20px 25%;
+    border-bottom: 4px solid white;
+}
+
+@media (min-width: 0px) and (max-width: 599px){
+    header>nav{
+        margin: auto;
+        flex-flow: column;
+        width: 92%;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    header>nav>a{
+        width: 100%;
+    }
+    a:hover{
+        scale: 1.05;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px){
+
+}
+
+@media (min-width: 1000px){
+    
+}
