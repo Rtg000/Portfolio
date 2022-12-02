@@ -25,7 +25,12 @@ header>nav{
     align-items: center;
 }
 
-a{
+nav>a{
+    text-decoration: none;
+    color: black;
+}
+
+header>nav>a{
     border-radius: 5px;
     text-align: center;
     width: 22%;
@@ -36,7 +41,7 @@ a{
     transition: 0.5s;
 }
 
-a:hover{
+header>nav>a:hover{
     color: white;
     background-color: rgb(95, 95, 95);
     transition: 0.5s;
@@ -84,14 +89,16 @@ main>h2{
         width: 100%;
         padding: 20px;
     }
-    a:hover{
+    /* a:hover{
         scale: 1.05;
-    }
+    } */
     main>h1{
         font-size: 28pt;
         width: 100%;
         padding: 5%;
         margin-top: 25px;
+        border-bottom: 3px solid white;
+
     }
     main>h2{
         font-size: 14pt;
