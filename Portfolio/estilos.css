@@ -45,6 +45,8 @@ a:hover{
 
 main{
     display: flex;
+    flex-flow: column nowrap;
+    gap: 60px;
     align-items: center;
     justify-content: center;
     margin: 3%;
@@ -57,10 +59,15 @@ main>p{
 
 main>h1{
     color: white;
-    font-size: 32pt;
+    font-size: 36pt;
     margin-top: 80px;
     padding: 0px 25% 20px 25%;
     border-bottom: 4px solid white;
+}
+
+main>h2{
+    color: white;
+    font-size: 18pt;
 }
 
 @media (min-width: 0px) and (max-width: 599px){
