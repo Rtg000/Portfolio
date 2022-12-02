@@ -62,12 +62,14 @@ main>h1{
     font-size: 36pt;
     margin-top: 80px;
     padding: 0px 25% 20px 25%;
+    text-align: center;
     border-bottom: 4px solid white;
 }
 
 main>h2{
     color: white;
     font-size: 18pt;
+    text-align: center;
 }
 
 @media (min-width: 0px) and (max-width: 599px){
@@ -75,14 +77,27 @@ main>h2{
         margin: auto;
         flex-flow: column;
         width: 92%;
-        gap: 15px;
+        gap: 13px;
         margin-top: 15px;
     }
     header>nav>a{
         width: 100%;
+        padding: 20px;
     }
     a:hover{
         scale: 1.05;
+    }
+    main>h1{
+        font-size: 28pt;
+        width: 100%;
+        padding: 5%;
+        margin-top: 25px;
+    }
+    main>h2{
+        font-size: 14pt;
+    }
+    main{
+        margin: 5%;
     }
 }
 
