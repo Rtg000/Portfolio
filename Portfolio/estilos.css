@@ -9,14 +9,44 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header>h1{
+header>div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgb(219, 219, 219);
+    /* padding: 40px; */
+}
+
+header>div>nav{
     color: black;
     font-size: 26pt;
     padding: 20px;
     background-color: rgb(219, 219, 219);
 }
 
-header>nav{
+header>div>#navPortfolio{
+    width: 30%;
+}
+
+header>div>#navIdiomas{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* text-align: right; */
+    width: 25%;
+    gap: 15px;
+}
+
+header>div>#navIdiomas>a{
+    /* text-align: center; */
+    font-size: 13pt;
+}
+
+header>div>#navIdiomas>a>img{
+    width: 30px;
+}
+
+header>#navMenu{
     margin: 3%;
     margin-top: 20px;
     display: flex;
@@ -39,10 +69,23 @@ header>nav>a{
     background-color: rgb(219, 219, 219);
     text-decoration: none;
     color: black;
+    font-size: 20pt;
     transition: 0.5s;
 }
 
-header>nav>a:hover{
+header>#navMenu>a{
+    border-radius: 5px;
+    text-align: center;
+    width: 22%;
+    padding: 25px;
+    background-color: rgb(219, 219, 219);
+    text-decoration: none;
+    color: black;
+    font-size: 12pt;
+    transition: 0.5s;
+}
+
+header>#navMenu>a:hover{
     color: white;
     background-color: rgb(95, 95, 95);
     transition: 0.5s;
@@ -59,6 +102,7 @@ main{
 }
 
 main>p{
+    font-size: 18pt;
     line-height: 24px;
     color: white;
 }
@@ -74,19 +118,20 @@ main>h1{
 
 main>h2{
     color: white;
-    font-size: 18pt;
+    font-size: 26pt;
+    font-weight: bold;
     text-align: center;
 }
 
 @media (min-width: 0px) and (max-width: 599px){
-    header>nav{
+    header>#navMenu{
         margin: auto;
         flex-flow: column;
         width: 92%;
         gap: 13px;
         margin-top: 15px;
     }
-    header>nav>a{
+    header>#navMenu>a{
         width: 100%;
         padding: 17px;
     }
